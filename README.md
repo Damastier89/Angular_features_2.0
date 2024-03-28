@@ -1,27 +1,57 @@
-# AngularFeatures20
+# Angular_Features_2.0
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.10.
+## Фреймворк:
 
-## Development server
+- Angular 16+
+- Для Angular 16 требует node.js версий минимум 16.x.x или более свежая.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Управление состоянием:
 
-## Code scaffolding
+- RxJs;
+- NgRx Store;
+- Observebal Data Service;
+- Нативные сервисы Angular;
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Стилизация:
 
-## Build
+- SCSS, MaterialUI, БЭМ;
+- SCSS-модули в Angular работают по умолчанию;
+- глобальные стили хранятся в styles.scss;
+- дополнительные стили хранятся в assets/styles;
+- изображения хранятся в assets/image;
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Установка зависимостей
 
-## Running unit tests
+```
+npm i
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Разработка
 
-## Running end-to-end tests
+- По-умолчанию все команды запуска фронта запускают dev-сервер, который доступен по адресу http://localhost:4200
+- фронт можно запускать командой:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm run front
+```
 
-## Further help
+## Возможные дополнительные пакеты для установки
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- установка geojson и типов для них
+
+```
+npm i geojson
+npm i --saveDev @types/geojson
+```
+
+## P.S.
+
+- Если в терминале пишет следующие : `Powershell - выполнение сценариев отключено в этой системе`
+
+> То выполняем следующие:
+>
+> - Открываем терминал `Windows PowerShell` от имени администратора.
+> - Пишем и запускаем: Set-ExecutionPolicy RemoteSigned
+> - На вопрос отвечаем: A (Да для всех)
+
+> (Скрипты, подготовленные на локальном компьютере, можно запускать без ограничений, скрипты, загруженные из интернета - только при наличии цифровой подписи)
