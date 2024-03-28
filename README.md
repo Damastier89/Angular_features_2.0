@@ -61,3 +61,17 @@ npm i --saveDev @types/geojson
 ```
 npx prettier --write .
 ```
+
+-   При возникновении ошибки : `warning: in the working copy of 'name', LF will be replaced by CRLF the next time Git touches it`
+-   Это предупреждение говорит о том, что при работе с файлами в Git будут произведены изменения в символах новой строки.
+-   Для Windows:
+
+```
+git config --global core.autocrlf true
+```
+
+-   Для Unix-подобных систем (Linux, macOS):
+
+```
+git config --global core.autocrlf input
+```
